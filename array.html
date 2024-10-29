@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Array
+      // Array is collection of values stored with in the square brackets
+      // arrays are non-primitive datatypes which can be changes or modified
+      // we can store any datattype in an array
+      // array can be accessed byusing the index values
+
+      // Array Methods
+      // length
+      // push() - adds an element to the end of the array
+      // pop() - removes an element from the end of the array
+      // unshift() - adds an element to the beginning of the array
+      // shift()-removes an element from the beginning of the array
+      // splice()-contains 3 parameters ,start index,how many want to delete, what to insert
+      // join()
+      // sort()
+      // reverse()
+      // concat()
+      // join
+      // indexOf()
+      // flat()
+      // lastindexOf()
+      // includes()
+      // tostring()
+
+      // length
+      let arr1 = [1, 2, 3, 4, 5, 6, 7];
+      console.log(arr1.length);
+      console.log(arr1.length - 1);
+      //  push
+      arr1.push("ashi");
+      console.log(arr1);
+
+      let arr2 = [1, true, [], "AShwitha", null];
+      arr2.push({});
+      console.log(arr2);
+
+      let arr3 = [1, {}, [], "usha", ""];
+      arr3.push("ushaaaa");
+      console.log(arr3);
+      //
+
+      // pop
+      let arr4 = [1, 2, 3, 4, 5, 6, 8, 9];
+      console.log(arr4.pop()); 
+      console.log(arr4);
+    //   
+      let arr5 = [7, 98, "abhi", { name: "ashi" }, []];
+      arr5.pop();
+      console.log(arr5);
+
+      //  unshift adds value at staring of an array
+      let arr6 = [1, 2, 87, true, [], "AShwitha", null];
+      arr6.unshift("sai");
+      console.log(arr6);
+      //
+      let arr7 = [1, 2, 97, false, [75, 8, true], "AShwitha", null, ""];
+      arr7.unshift({});
+      console.log(arr7);
+      //
+      let arr8 = [1, 2, 87, true, [], "abhi", null, {}];
+      arr8.unshift([1, 5, true]);
+      console.log(arr8);
+
+      //  shift (Removes the Elements at the starting of the array)
+      let arr9 = [1, 2, 87, true, { age: 12, name: "ashi" }, "abhi", null, {}];
+      arr9.shift();
+      console.log(arr9);
+    //   
+    let arr10 = [1,9,37,false,[],"abhi","",{city:"hyd"}]
+    arr10.shift();
+    console.log(arr10)
+    // 
+    let arr11=[true,6,9,{},[],"jay",null]
+    arr11.shift()
+    console.log(arr11)
+    // 
+    // Splice 
+    let arr12=[true,false,{},[],1,7,null]
+    arr12.splice(3,3,"hi","hello",2)
+    console.log(arr12)
+    // 
+    arr12.splice(0,2,1,7)
+    console.log(arr12)
+    // 
+    arr12.splice(5,2,"ashwitha",{})
+    console.log(arr12)
+    // join  returns in string 
+    let arr13=[2,6,8,3,true,false,{},null]
+ console.log(arr13.join("-"))
+   
+    // 
+    let arr14=[2,5,8,3,true,false,{},null,[]]
+    console.log(arr14.join("$"))
+// 
+let arr15=[2,6,8,3,true,false,{},null]
+console.log(arr15.join("^"))
+// sort (sort in order based on first number)
+let arr16=[2,6,8,3,true,false,{},null]
+console.log(arr16.sort())
+// 
+let arr17=[2,6,8,3,10,100,76,35,875,25,853,36789,8966543,24466]
+console.log(arr17.sort())
+// to sort in ascending order
+arr17.sort((a,b) =>a-b)
+console.log(arr17)
+// in descending order
+arr17.sort((a,b)=>b-a)
+console.log(arr17)
+// reverse()
+let arr18=[2,6,8,3,true,false,{},null]
+console.log(arr18.reverse())
+// 
+let arr19=[true,false,{name:"ashh"},[],3,76,435]
+console.log(arr19.reverse())
+// 
+let arra=[true,false,{},[],1,7,null]
+console.log(arra.reverse())
+// concat
+let con=[1,7,95,467,75
+]
+let con2=[true,false,"ashi",5,85,{},[]]
+console.log(con.concat(con2))
+let con3=[2378638,873,7537,{},[]]
+console.log(con2.concat(con3))
+console.log(con3.concat(con))
+
+ // flat()
+ let fl=[1,5,2,{},[2,5,7],[2,[432,[34]]]]
+ console.log(fl.flat())
+ console.log(fl.flat(2))
+ console.log(fl.flat(3))
+     
+      
+      // tostring()
+      let arr_str=[2,5,23,7436,346,null]
+      console.log(arr_str.toString())
+      // 
+      let arr2_str=[56734,876,53,true,false,{}]
+      console.log(arr2_str.toString())
+       let arr3_str=[73,"jyhue",67743,"ashi",false,true]
+       console.log(arr3_str.toString())
+
+
+      //  print the even numbers in the array
+      let arr_even=[1,2,3,4,5,6,7,8,90,23,543,44,22,54,13,15,64]
+      for(i=0;i<arr_even.length;i++){
+        if(arr_even[i]%2==0){
+          console.log(arr_even[i])
+        }
+       
+      }
+
+
+    </script>
+  </body>
+</html>
